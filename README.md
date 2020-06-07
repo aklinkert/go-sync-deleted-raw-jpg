@@ -8,6 +8,18 @@ So my image editing process is as follows:
 * Sort JPGs, delete crappy images
 * run this tool to delete the RAW files from which I deleted the JPGs
 
+## Splitting RAW and JPG files
+
+I use the following Bash function to separate the files before cleaning up:
+
+```bash
+function split-images-raw {
+	mkdir JPG RAW
+	mv *.JPG JPG/
+	 mv *ARW RAW/
+}
+```
+
 # License
 
 ```
